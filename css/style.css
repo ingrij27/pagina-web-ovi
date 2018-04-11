@@ -93,16 +93,46 @@ background-image: url('../img/superiorcienciasbasicas_1_1.png');
     display: block;
     padding: 15px 58px;
 }
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #9d9d9d;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #F47920;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #fff !important;
+    white-space: nowrap;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
 /***********************Acceoso raidos******************************/
 .accesosRapidos .container .item {
     width: 50%;
     margin: 0 auto;
 }
 
+.accesosRapidos a {
+    text-decoration: none;
+}
 
 .accesosRapidos .container .item .circulos {
-    width: 130px;
-    height: 130px;
+    width: 80px;
+    height: 80px;
     background: #004669;
     border-radius: 50%;
     color: #fff;
@@ -112,12 +142,12 @@ background-image: url('../img/superiorcienciasbasicas_1_1.png');
     background:#e7b200;
 }
 .accesosRapidos .container .item i.fa {
-   font-size: 69px;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    top: 30px;
-    position: relative;
+   font-size: 41px;
+   margin: 0 auto;
+   display: block;
+   text-align: center;
+   top: 21px;
+   position: relative;
 }
 
 .accesosRapidos .container .item i.fa:hover {
@@ -127,12 +157,12 @@ background-image: url('../img/superiorcienciasbasicas_1_1.png');
 }
 
 .accesosRapidos .container .item span {
-      font-size: 24px;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    color: #004669;
-    padding: 10px 0px;
+      font-size: 15px;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      color: #004669;
+      padding: 10px 0px;
 }
 .accesosRapidos .container .item span:hover{
     color: #e7b200;
@@ -140,12 +170,16 @@ background-image: url('../img/superiorcienciasbasicas_1_1.png');
 
 
 .accesosRapidos {
-    padding: 43px 0px 0px 0px;
-    background: #c1c1c1;
+    padding: 0px 0px 0px 0px;
     margin-bottom: 38px;
-    border-top: 2px solid #e7b200;
-    border-bottom: 2px solid #e7b200;
-    margin-top: 35px;
+    margin-top: 47px;
+}
+
+.accesosRapidos h2 {
+    font-size: 25px;
+    color: #005883;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 /**********************Noticias**********************/
@@ -205,6 +239,20 @@ h2.title-article {
 }
 
 
+.col-md-9.fondo-d {
+    background: #e8eef1;
+}
+.noticias .container {
+    border: 1px solid #c1c1c1;
+}
+
+.noticias h2.tituloSeccion {
+    font-size: 25px;
+    color: #005883;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 .page_navigation , .alt_page_navigation{
 	padding-bottom: 10px;
 }
@@ -223,6 +271,17 @@ h2.title-article {
 	background-color:white !important;
 	color:black !important;
 }	
+
+    .video h2 {
+    font-size: 25px;
+    color: #005883;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+section.video {
+    margin-top: 40px;
+}
 /**************************************************/
 footer {
     background: #c1c1c1;
@@ -267,4 +326,164 @@ div#rootwizard .nav>li>a:focus, .nav>li>a:hover {
 }
 div#rootwizard {
     margin-top: 52px;
+}
+
+div#rootwizard .tab-pane hr {
+    margin-bottom: 11px;
+    margin-top: 11px;
+    border-top: 1px solid #005883;
+}
+
+div#rootwizard .tab-pane h2 {
+  color: #005883;
+  font-size: 20px;
+}
+
+div#rootwizard .tab-pane p i {
+    color: #F47920;
+    font-size: 21px;
+}
+
+div#rootwizard .tab-pane p {
+    color: #b3b3b3;
+}
+
+.ttltematica p {
+    color: #005883 !important;
+    font-size: 17px;
+}
+
+/*********contenido paginas******************/
+section.infoPgina h1 {
+    color: #005883;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: aria;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+section.infoPgina p {
+    color: #b3b3b3;
+}
+
+section.infoPgina audio {
+    margin-bottom: 35px;
+}
+section.infoPgina .thumbnail {
+    background: #F47920;
+    box-shadow: 5px 10px #888888;
+}
+section.infoPgina .thumbnail h3 {
+    color: #101010;
+    text-align: center;
+    font-weight: 700;
+}
+section.infoPgina .thumbnail p {
+    color: #fff !important;
+}
+/************tarjeta********************/
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+}
+
+.card-text {
+    clear: both;
+    margin-top: .5em;
+    color: rgba(0, 0, 0, .68);
+}
+
+.card-footer {
+    font-size: 1em;
+    position: static;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: .75em 1em;
+    color: rgba(0, 0, 0, .4);
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    background: #fff;
+}
+
+.card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.profile {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-avatar {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-inline {
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+
+.profile-inline ~ .card-title {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.meta {
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a:hover {
+    color: rgba(0, 0, 0, .87);
 }
