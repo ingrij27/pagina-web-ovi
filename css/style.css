@@ -44,7 +44,7 @@
 
 
 section.encabezado {
-    background: #469ec3;
+    background: #fff;
 }
 
 section.encabezado img {
@@ -62,8 +62,38 @@ background-image: url('../img/superiorcienciasbasicas_1_1.png');
         background-size: cover;
     height: 127px;
 }
+/************************menu******************************/
+.navbar-inverse {
+    background-color: #808080;
+    border-color: #808080;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 73px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #F47920;
+}
 
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 15px 58px;
+}
+/***********************Acceoso raidos******************************/
 .accesosRapidos .container .item {
     width: 50%;
     margin: 0 auto;
@@ -213,4 +243,28 @@ footer iframe {
     width: 100%;
     height: 207px;
     padding: 20px;
+}
+/**********************botones de informacion*************************/
+div#rootwizard .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 15px 23px;
+    color: #005883 !important;
+    font-size: 17px;
+    white-space: initial;
+}
+
+div#rootwizard .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff !important;
+
+    background-color: #F0B429;
+}
+
+div#rootwizard .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #B3B3B3;
+    color:#fff;
+}
+div#rootwizard {
+    margin-top: 52px;
 }
